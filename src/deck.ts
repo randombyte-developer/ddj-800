@@ -189,7 +189,7 @@ export class Deck {
 
     // Load track
     this.controls.push(
-      new DeckButton(this.index, "TraxButton", {
+      new DeckButton(this.index, "Load", {
         onPressed: () => {
           this.activate("LoadSelectedTrack");
         },
@@ -198,7 +198,7 @@ export class Deck {
 
     // Eject track
     this.controls.push(
-      new DeckButton(this.index, "TraxButtonShifted", {
+      new DeckButton(this.index, "LoadShifted", {
         onPressed: () => {
           if (!this.getValue("play")) this.activate("eject");
         },
