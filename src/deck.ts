@@ -131,7 +131,8 @@ export class Deck {
       new DeckMidiControl(this.index, "JogEncoderTouched", false, {
         onNewValue: (value) => {
           if (engine.isScratching(this.channel)) {
-            engine.scratchTick(this.channel, value - 0x40);
+            const centeredValue = value - 0x40;
+            engine.scratchTick(this.channel, centeredValue * 2);
           }
         },
       }),
