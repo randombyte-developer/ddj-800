@@ -21,6 +21,11 @@ export function init(): void {
         engine.setParameter("[Master]", "crossfader", value);
       },
     }),
+    new Button("TraxButton", {
+      onPressed: () => {
+        activate("[Library]", "MoveFocusForward");
+      },
+    }),
     new Button("LibraryBack", {
       onPressed: () => {
         activate("[Library]", "MoveFocusForward");
