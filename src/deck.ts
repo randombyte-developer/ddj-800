@@ -217,6 +217,10 @@ export class Deck {
     setLed(`${this.index}BeatjumpBackward`, 0x15); // green
     setLed(`${this.index}BeatjumpForward`, 0x15);
 
+    setLed(`${this.index}LoopIn`, 0x7F);
+    setLed(`${this.index}LoopOut`, 0x7F);
+    setLed(`${this.index}Sync`, 0x7F);
+
     this.triggerConnections();
   }
 
