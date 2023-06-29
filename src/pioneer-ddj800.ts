@@ -1,6 +1,6 @@
-import { Button } from "@controls/button";
-import { Deck } from "@/deck";
-import { activate, toggleControl } from "@/utils";
+import { Button } from "./controls/button";
+import { Deck } from "./deck";
+import { activate, toggleControl } from "./utils";
 import { MidiControl } from "./controls/midiControl";
 import { MidiMapping } from "./midiMapping";
 import { FineMidiControl } from "./controls/fineMidiControl";

@@ -2,7 +2,7 @@ export class MidiControl {
 
     public lastValue: number = 0;
 
-    constructor(readonly name: string, readonly scaled: boolean, protected readonly callback: MidiControlCallback) {}
+    constructor(readonly name: string, readonly scaled: boolean, protected readonly callback: MidiControlCallback) { }
 
     public offerValue(name: string, value: number) {
         if (name != this.name) return;
