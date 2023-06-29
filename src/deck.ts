@@ -144,17 +144,6 @@ export class Deck {
           }
         },
       }),
-
-      // Crossfader assignment
-      new DeckButton(this.index, "CrossfaderAssignLeft", {
-        onPressed: () => this.activate("orientation_left"),
-      }),
-      new DeckButton(this.index, "CrossfaderAssignCenter", {
-        onPressed: () => this.activate("orientation_center"),
-      }),
-      new DeckButton(this.index, "CrossfaderAssignRight", {
-        onPressed: () => this.activate("orientation_right"),
-      }),
     ];
 
     this.rateControl = new DeckFineMidiControl(this.index, "Tempo", {
